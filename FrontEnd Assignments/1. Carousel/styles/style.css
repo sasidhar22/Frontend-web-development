@@ -1,0 +1,88 @@
+:root{
+    --button-color: #d9d9d9;
+    --page-color: #d9d9d9;
+}
+
+#main-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--page-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading{
+    display: inline-block;
+    font-size: 30px;
+    padding:3px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#heading #avengers-heading{
+    margin: 0px 0px;
+}
+
+#container{
+    width: 80%;
+    height: 80vh;
+    margin-top: 25px;
+    position: relative;
+}
+
+#container .image .img-avengers{
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+}
+
+#container #button{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+#container #button .nav-buttons{
+    background-color: var(--button-color);
+    margin-top: 0px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+}
+
+.btn-image{
+    width: 40px;
+}
+
+#container #button #prev{
+    padding-top: 1px;
+    background-color: var(--button-color);
+    border-radius: 0 3px 4px 0;
+}
+
+#container #button #next{
+    position: absolute;
+    right: 0;
+    padding-top: 1px;
+    background-color: var(--button-color);
+    border-radius: 4px 0 0 3px;
+}
+

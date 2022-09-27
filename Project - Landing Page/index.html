@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body id="mainBody">
+
+    <div id="partOne" class="m-0 jumbotron jumbotron-fluid">
+        <div class="container d-flex flex-row">
+            <section class="row justify-content-between">
+                <div id="info" class="col-md-7 my-3">
+                    <div class="top-row1-primary pt-3 display-1 text text-light">
+                        3N/4D Ladakh package
+                    </div>
+                    <div class="top-row1-secondary pt-3 display-2 text text-light">
+                        Starts at just Rs.23,199/- all inclusive
+                    </div>
+                    <div class="top-row1-small pt-5 display-3 text text-light">
+                        <i class="fa fa-plane-departure fa-lg"></i>&nbsp;Flights
+                        included
+                    </div>
+                    <div class="top-row1-small pt-4 text text-light display-3">
+                        <i class="fas fa-light fa-hotel"></i>&nbsp;Accommodation
+                        at 4-star hotels
+                    </div>
+                    <div class="top-row1-small pt-4 text text-light display-3">
+                        <i class="fa fa-cutlery fa-lg"></i>&nbsp;Breakfast
+                        included
+                    </div>
+                    <div class="top-row1-small pt-4 text text-light display-3">
+                        <i class="fa fa-sun-o fa-lg"></i>&nbsp;Sightseeing
+                        and transfers as per itinerary
+                        (complete itinerary
+                        below)
+                    </div>
+                </div>
+                <div class="col-md-4 mx-sm-4 mx-md-0 p-1 card">
+                    <div id="formDiv" class="card-body bg-dark border border-light">
+                        <figure class="figure">
+                            <img src="assets/images/tripadvisor.png"
+                                class="figure-img img-fluid rounded mx-auto d-block" alt="Trip Advisor">
+                        </figure>
+                        <div class="text-center text-light">
+                            <h3><span class="text text-warning">20%
+                                    CHEAPER</span>
+                                THAN COMPETITORS</h3>
+                        </div>
+                        <form onsubmit="validate(event)">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Name *">
+                                <span class="err" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email *">
+                                <span class="err" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number *">
+                                <span class="err" id="phoneError"></span>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-danger w-100">
+                                    <div class="text"> Book Now (Pay Later)
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="text-center text-white mt-2">
+                                <small>OFFER VALID TILL 31ST AUGUST</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" id="mainNav">
+        <div class="container">
+            <div>
+                <a class="navbar-brand js-scroll-trigger" href="#mainBody">
+                    <i class="fa fa-solid fa-earth-americas fa-2x"></i>
+                    <span class="text-light">&nbsp;LSQTravelAgency</span>
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler navbar-toggler-right mr-0" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="" aria-expanded="false"
+                    aria-label="Toggle Navigation">Menu &nbsp; <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase text-dark ml-auto">
+                        <li class="nav-item"><a href="#link1" class="nav-link js-scroll-trigger"><i
+                                    class="fa fa-thin fa-plane-departure"></i>&nbsp;Flights</a></li>
+                        <li class="nav-item"><a href="#link2" class="nav-link js-scroll-trigger"><i
+                                    class="fa fa-thin fa-train"></i>&nbsp;Trains</a></li>
+                        <li class="nav-item"><a href="#link3" class="nav-link js-scroll-trigger"><i
+                                    class="fa-solid fa-bus"></i>&nbsp;Buses</a></li>
+                        <li class="nav-item"><a href="#link4" class="nav-link js-scroll-trigger"><i
+                                    class="fa-solid fa-taxi"></i>&nbsp;Cabs</a></li>
+                        <li class="nav-item"><a href="#link6" class="nav-link js-scroll-trigger"><i
+                                    class="fa fa-light fa-hotel"></i>&nbsp;Hotels</a></li>
+                        <li class="nav-item"><a href="#link6" class="nav-link js-scroll-trigger"><i
+                                    class="fa fa-light fa-umbrella-beach"></i>&nbsp;Holiday
+                                Packages</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="partTwo" class="py-4 jumbotron jumbotron-fluid mx-0 my-0">
+        <div class="text-center">
+            <h1>Discover Ladakh this summer</h1>
+        </div>
+        <div class="mt-3 text-center">
+            <strong>SEE WHAT</strong> <em>Ladakh</em> <strong>HAS TO OFFER</strong>
+        </div>
+        <div class="container">
+            <p class="m-1">&nbsp;</p>
+
+            <div class="card-deck">
+                <div id="card1" class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="assets/images/day1.jpg" alt="Day1" class="figure-img img-fluid">
+                        </figure>
+                        <h4 class="card-title">
+                            <p class="text-center">Day 1</p>
+                        </h4>
+                        <h6 class="card-text text-center text-dark"><strong>TRANFER FROM DLEHI TO LADAKH
+                            </strong><em>by</em><strong> AC BUS.</strong></h6>
+                        <p class="lead card-text text-center"><small>Duis aute irure dolor in
+                                reprehenderit
+                                in
+                                voluptate
+                                velit
+                                esse
+                                cillum
+                                dolore eu fugiat nulla pariatur.</small></p>
+                    </div>
+                </div>
+
+                <div id="card2" class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="assets/images/day2.jpg" alt="Day2" class="figure-img img-fluid">
+                        </figure>
+                        <h4 class="card-title">
+                            <p class="text-center">Day 2</p>
+                        </h4>
+                        <h6 class="card-text text-center text-dark"><strong>IN LADAKH - CHECK IN - a DAY
+                            </strong><em>at</em><strong> PANGONG LAKE.</strong></h6>
+                        <p class="lead card-text text-center"><small>Duis aute irure dolor in
+                                reprehenderit
+                                in
+                                voluptate
+                                velit
+                                esse
+                                cillum
+                                dolore eu fugiat nulla pariatur.</small></p>
+                    </div>
+                </div>
+
+                <div id="card3" class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="assets/images/day3.jpg" alt="Day2" class="figure-img img-fluid">
+                        </figure>
+                        <h4 class="card-title">
+                            <p class="text-center">Day 3</p>
+                        </h4>
+                        <h6 class="card-text text-center text-dark"><strong>LOCAL SIGHTSEEING AND
+                                DEPARTURE
+                            </strong><em>to</em><strong> DELHI.</strong></h6>
+                        <p class="lead card-text text-center"><small>Duis aute irure dolor in
+                                reprehenderit
+                                in
+                                voluptate
+                                velit
+                                esse
+                                cillum
+                                dolore eu fugiat nulla pariatur.</small></p>
+                    </div>
+                </div>
+
+                <div id="card4" class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="assets/images/day4.jpg" alt="Day4" class="figure-img img-fluid">
+                        </figure>
+                        <h4 class="card-title">
+                            <p class="text-center">Day 4</p>
+                        </h4>
+                        <h6 class="card-text text-center text-dark"><strong>DEPARTURE: EARLY MORNING
+                                DROP
+                            </strong><em>at</em><strong> DELHI.</strong></h6>
+                        <p class="lead card-text text-center"><small>Duis aute irure dolor in
+                                reprehenderit
+                                in
+                                voluptate
+                                velit
+                                esse
+                                cillum
+                                dolore eu fugiat nulla pariatur.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mt-5 mb-2 text-center">
+                <button type="button" class="px-5 py-2 btn btn-danger w-45">
+                    <h4>Book Now (Pay Later)</h4>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="partThree" class="row py-5 justify-content-center mx-0 my-0">
+        <div class="col-5">
+            <div class="text text-center"><strong class="">
+                    <h3>WHAT OTHER TRAVELLERS ARE SAYING...</h3>
+                </strong></div>
+            <div>
+                <p class="text-center lead">
+                    <strong>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur.&rdquo;</strong>
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="customcerImage">
+                    <img src="assets/images/traveller.png" alt="traveller"
+                        class="img-fluid d-sm-block mx-auto px2 rounded-circle">
+                </div>
+                <div class="text-center">
+                    <p class="m-0 p-0"><strong>JOHN DOE</strong></p>
+                    <p class="m-0 p-0">MUMBAI - INDIA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="partFour" class="mb-0 jumbotron jumbotron-fluid mr-0">
+        <div class="mt-0 text-center">
+            <h2>Insta Snaps</h2>
+        </div>
+        <div class="pb-3 text-center"><small><strong>XPLORE LADAKH WITH
+                </strong><em>&copy;LSQTravelAgency</em></small>
+        </div>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-4 px-1 py-3">
+                    <img src="assets/images/pic1.jpg" class="img-fluid tripImages">
+                </div>
+                <div class="col-4 px-1 py-3">
+                    <img src="assets/images/pic2.jpg" class="img-fluid tripImages">
+                </div>
+                <div class="col-4 px-1 py-3">
+                    <img src="assets/images/pic3.jpg" class="img-fluid tripImages">
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-4 px-1 py-3">
+                    <img src="assets/images/pic4.jpg" class="img-fluid tripImages">
+                </div>
+                <div class="col-4 px-1 py-3">
+                    <img src="assets/images/pic5.jpg" class="img-fluid tripImages">
+                </div>
+                <div class="col-4 px-1 py-3">
+                    <img src="assets/images/pic6.jpg" class="img-fluid tripImages">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="partFive" class="jumbotron jumbotron-fluid mb-0 mr-0">
+        <div class="pt-4 text-center text-white">
+            <h1 class="text">Save 20% by booking now</h1>
+        </div>
+        <div class="mt-3 text-center text-white">
+            <strong>EXPLORE</strong> <span><em>the beauty of</em></span> <strong> LADAKH</strong>
+        </div>
+        <div class="col-md-12 my-4 text-center">
+            <button type="button" class="px-5 py-2 btn btn-danger">
+                <h4>Book Now (Pay Later)</h4>
+            </button>
+        </div>
+    </div>
+
+    <div id="partSix" class="jumbotron jumbotron-fluid mb-0 mr-0">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <p class="mb-4"><strong>Why LSQTravelAgency?</strong></p>
+                    <p class="text text-dark">
+                        Established in 2011, LSQTravelAgency has since positioned itself as one of the leading
+                        companies,
+                        providing great offers, competitive airfares, exclusive discounts, and a seamless online booking
+                        experience to many of its customers.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p class="mb-4"><strong>Booking Flights with LSQTravelAgency</strong></p>
+                    <p class="text text-dark">
+                        At LSQTravelAgency, you can find the best of deals and cheap air tickets to any place you want
+                        by
+                        booking your tickets on our website or app. Being India’s leading website for hotel, flight, and
+                        holiday bookings.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p class="mb-4"><strong>Domestic Flights with LSQTravelAgency</strong></p>
+                    <p class="text text-dark">
+                        LSQTravelAgency is India's leading player for flight bookings. With the cheapest fare guarantee,
+                        experience great value at the lowest price.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="bg-dark py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <section class="col-3 btn-group btn-group-sm my-3" role="group" aria-label="footer">
+                    <button type="button" class="btn btn-secondary py-3"><i
+                            class="fa fa-google-plus fa-2x"></i></button>
+                    <button type="button" class="btn btn-secondary"><i class="fa fa-twitter fa-2x"></i></button>
+                    <button type="button" class="btn btn-secondary"><i class="fa fa-snapchat-ghost fa-2x"></i></button>
+                    <button type="button" class="btn btn-secondary"><i class="fa-brands fa-facebook fa-2x"></i></button>
+                </section>
+            </div>
+            <div class="row justify-content-center">
+                <section class="col-3">
+                    <small class="text text-center text-light">
+                        <p>&copy;&nbsp;2022&nbsp;<em>LSQTravelAgency</em></p>
+                        <p>Country: <strong>INDIA USA UAE</strong></p>
+                    </small>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script defer src="scripts/script.js"></script>
+</body>
+
+</html>

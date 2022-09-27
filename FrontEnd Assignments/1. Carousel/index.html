@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Image Carousel</title>
+</head>
+
+<body id="main-body">
+    <header id="heading">
+        <h1 id="avengers-heading">Avengers Avenue</h1>
+    </header>
+    <section id="container">
+        <div class="image">
+            <img class="img-avengers" src="assets/images/Avengers1.jpg">
+        </div>
+
+        <div id="button">
+            <a class="nav-buttons" onclick="nextImage(-1)" id="prev"><img class="btn-image" src="assets/images/LeftControl.png"></a>
+            <a class="nav-buttons" onclick="nextImage(1)" id="next"><img class="btn-image" src="assets/images/RightControl.png"></a>
+        </div>
+    </section>
+
+    <script defer src="scripts/script.js"></script>
+</body>
+</html>
+

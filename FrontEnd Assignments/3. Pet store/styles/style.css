@@ -1,0 +1,99 @@
+:root {
+    --petstore-bgcolor: #e5efff;
+    --petstore-border: #000000;
+    --heading-hover: #c79f62;
+    --btn-focus: #ffffff;
+    --btn-hover: #63a163;
+}
+
+#main-body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: var(--petstore-bgcolor);
+}
+
+#main-body #petStore {
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    border-radius: 1em;
+    margin-top: 10%;
+    border: 2px solid var(--petstore-border);
+}
+
+#heading1 {
+    padding: 0 8%;
+    text-align: center;
+    position: relative;
+}
+
+#heading1:hover {
+    color: var(--heading-hover);
+}
+
+#petStore #petWorld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap-reverse;
+    position: relative;
+}
+
+#btn-group {
+    padding-left: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    left: 40px;
+}
+
+.btn {
+    margin-top: 15px;
+    font-size: 25px;
+    border-radius: 70px;
+    width: 100px;
+    padding: 10px 1px;
+    cursor: pointer;
+    display: block;
+}
+
+#target-images {
+    position: relative;
+}
+
+#target-images #image {
+    width: 400px;
+}
+
+@media screen and (max-width: 676px) {
+    #target-images #image {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    #target-images #image {
+        width: 300px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 0;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    #target-images #image {
+        width: 220px;
+    }
+
+    .btn {
+        font-size: 10px;
+        display: block;
+    }
+}
+

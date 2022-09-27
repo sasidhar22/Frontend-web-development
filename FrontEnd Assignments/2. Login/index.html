@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Login </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body id="main-body">
+    <div id="container">
+
+        <div id="title"><span id="span-title">Get started today!</span></div>
+        <div id="content">
+
+            <form id="loginDetails" action="html/redirect.html" onsubmit="return validator(event)">
+
+                <div id="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input class="inputDetails" type="text" placeholder="Eg: Mahendra" id="firstName"
+                            onkeyup="validateFirstName()">
+                        <span class="err" id="first_name_err"></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input class="inputDetails" type="text" placeholder="Eg: Dhoni" id="lastName"
+                            onkeyup="validateLastName()">
+                        <span class="err" id="last_name_err"></span>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input class="inputDetails" type="email" placeholder="abc@xyz.com" id="email"
+                            onkeyup="validateEmail()">
+                        <span class="err" id="email_err"></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input class="inputDetails" type="password" placeholder="Enter your password" id="password"
+                            onkeyup="validatePassword()">
+                        <span class="err" id="password_err"></span>
+                    </div>
+                </div>
+                <div id="btn-submit">
+                    <input id="submit-button" type="submit" value="Claim Your Free Trial &#9658;">
+                </div>
+                <p id="terms-conditions">You are agreeing to our <a class="hyperlink" href="terms">Terms and
+                        Services</a></p>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script defer src="scripts/script.js"></script>
+</body>
+
+</html>

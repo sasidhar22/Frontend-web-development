@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email Editor</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+
+
+<body id="main-body">
+    <div id="email-editor">
+        <div><img id="icon-remove" src="assets/images/remove_img.png"></div>
+        <form action="html/redirect.html" id="contact-form" onsubmit="validator(event)">
+
+            <!-- From -->
+            <div id="div-from" class="input-group">
+                <label id="label-from" for="myEmail">From <b>|</b></label>
+                <input id="fromEmail" class="input-email" type="email" name="myEmail"
+                    value="defaultSenderMailId@gmail.com" onkeydown="validateFromEmail()">
+                <span id="fromEmail-error" class="error"></span>
+            </div>
+
+            <!-- To -->
+            <div id="div-to" class="input-group">
+                <label id="label-to" for="to">To <b>|</b></label>
+                <input id="toEmail" class="input-email" type="text" name="to"
+                    onkeydown="emailsSeparator(event)">
+                <span id="toEmail-error" class="error"></span>
+                <input id="cc-bcc" type="button" name="btn-cc/bcc" value="Cc/Bcc" onclick="showHideDiv()">
+            </div>
+
+            <!-- CC/BCC -->
+            <div id="div-cc-bcc">
+                <div id="div-cc" class="input-group">
+                    <label id="label-cc" for="box-cc">Cc <b>|</b></label>
+                    <input id="box-cc" class="input-email" type="email" name="cc"
+                        onkeydown="emailsSeparator(event)">
+                    <span id="ccEmail-error" class="error"></span>
+                </div>
+
+                <div id="div-bcc" class="input-group">
+                    <label id="label-bcc" for="box-bcc">Bcc <b>|</b></label>
+                    <input id="box-bcc" class="input-email" type="email" name="bcc"
+                        onkeydown="emailsSeparator(event)">
+                    <span id="bccEmail-error" class="error"></span>
+                </div>
+            </div>
+
+            <!-- Subject -->
+            <div id="div-subject" class="input-group">
+                <label for="subject"></label>
+                <input id="subject" type="text" name="subject" placeholder="Subject">
+            </div>
+
+            <!-- Textarea -->
+            <textarea id="text-message" name="text" placeholder="Type your message here...."></textarea>
+            <hr>
+
+            <!-- Submit -->
+            <div id="footer">
+                <span><button id='btn-submit' type="submit">Send</button></span>
+
+                <span><img id="firt-img" class="footer-images" onclick="importData()" src="assets/images/attachment.png"
+                        width="20px"></span>
+                <span id="selected"></span>
+
+                <span><img class="footer-images" src="assets/images/gif.png"></span>
+                <span><img class="footer-images" src="assets/images/figL.png"></span>
+                <span><img class="footer-images" src="assets/images/emoji.png"></span>
+                <span id="pipe">|</span>
+                <span><img class="footer-images" src="assets/images/link.png"></span>
+                <span id="to-bold"><b>B</b></span>
+                <span id="to-italic"><i><b>I</b></i></span>
+                <span><img class="footer-images" src="assets/images/colors.png"></span>
+                <span><img class="footer-images" src="assets/images/lettersize.png"></span>
+                <span id="options"><img id="img-options-png" class="footer-images" src="assets/images/options.png"></span>
+                <div id="img-bin"><img id="img-bin-png" class="footer-images" src="assets/images/bin.png">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script defer src="scripts/script.js"></script>
+</body>
+
+</html>
+
